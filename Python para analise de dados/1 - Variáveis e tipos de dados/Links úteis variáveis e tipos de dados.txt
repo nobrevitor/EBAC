@@ -1,0 +1,13 @@
+Links úteis:
+
+	Methods para strings - https://www.w3schools.com/python/python_ref_string.asp
+
+	Funções em Python - https://panda.ime.usp.br/pensepy/static/pensepy/05-Funcoes/funcoes.html#funcoes-podem-chamar-outras-funcoes
+
+	Tudo sobre Váriaveis - https://mange.ifrn.edu.br/python/aprenda-com-py3/capitulo_02.html#comandos
+
+	Propagação de erro em floating point - https://floating-point-gui.de/errors/propagation/
+
+	Tabela da verdade sobre booleans - https://www.todamateria.com.br/tabela-verdade/
+
+	Webnar - https://ebaconline.com.br/webinars/intern-dados-masterclass-2022-10-24

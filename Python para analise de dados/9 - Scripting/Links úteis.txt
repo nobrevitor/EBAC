@@ -1,0 +1,5 @@
+Links úteis:
+
+https://pense-python.caravela.club/02-variaveis-expressoes-e-instrucoes/04-modo-script.html
+
+https://learn.microsoft.com/pt-br/windows/python/scripting

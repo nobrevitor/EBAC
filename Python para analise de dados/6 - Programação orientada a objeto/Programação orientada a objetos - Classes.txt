@@ -1,0 +1,15 @@
+Programação orientada a objeto:
+	
+	Escopo e espaços de nomes do Python:
+		Um espaço de nomes é um mapeamento que associa nomes a objetos. Atualmente são implementados como dicionários.
+Nome utilizado para associar um objeto aos seus atributos.		
+
+	Classes:
+		Proporcionam uma forma de organizar dados e funcionalidades juntos. Criar uma nova classe cria um novo tipo de obejto, permitindo que novas instâncias desse tipo sejam produzidas. Cada instância de classe pode ter atributos anexados a ela. Intâncias tem também métodos (definidos pela classe) para modificar seu estado.
+		As caracteristicas de se trabalhar com classes são: 
+			Mecanismo de herança:
+
+			 Classe filha herda da classe mãe os métodos existentes para aquela classe, permite múltiplas classes base (herança múltipla).
+			Classe derivada:
+
+			 Pode sobscrever quaisquer métodos de uma classe ancestral, e um método pode invocar outro método homônimo de uma classe ancestral.		

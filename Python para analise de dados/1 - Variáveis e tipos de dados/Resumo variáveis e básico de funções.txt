@@ -1,0 +1,178 @@
+Valores e tipos:
+
+	Variáveis: 
+		Números: 2, 5, 6564 são "int"
+
+		Números: 2.5, 6.54, 3.14 são loat"
+
+		Variáveis de texto são strings, em 		Python 'str', atribuida com aspas 		duplas
+
+		Números entre aspas são strings
+
+		Como esses são os tipos de 		variáveis podemos também testar os 		tipos de cada variável com a 		função type(variável)
+	
+	Nomes: 
+		Maiúsculas e minúsculas são 		diferentes em Python
+		
+		Geralmente não se usa Maiúsculas
+
+		Usa-se o underscore( _ ) para 		separar	nomes e outras palavras na 		definição de variáveis
+
+	Palavras reservadas:
+		Há 33 palavras reservadas em 		Python
+
+		and
+		as
+		assert
+		break
+		class
+		continue
+		def
+		del
+		elif
+		else
+		except
+		finally
+		for
+		from
+		global
+		if
+		import
+		in
+		is
+		lambda
+		nonlocal
+		not
+		or
+		pass
+		raise
+		return
+		try
+		while
+		with
+		yield
+		False
+		None
+		True
+
+		Obtem-se essa lista com o comando 
+		"import keyword
+		print (keyword.kwlist)"
+
+	Comandos:
+		São funções que o Python executa e 		mostra output
+		
+		Comandos de atribuição não produz 			output
+
+	Expressões:
+		Uma expressão é uma combinação de 			valores, variáveis e operadores
+
+		Ex:
+		>>> 1 + 1
+		2
+
+	Operadores e opreandos:
+		São símbolos especiais que 				representam computações 		matemáticas
+
+		+ adição
+		- subtração
+		/ divisão
+		* multiplicação
+		** potenciação
+		// divisão inteira
+
+		Possuem uma ordem lógica
+		
+		PEMDAS 
+		
+		P Parênteses
+
+		E Exponenciação
+
+		M Multiplicação
+
+		D Divisão
+
+		A Adição
+
+		S Subtração
+
+		Multiplicação de Divisão tem a 		mesma ordem de procedência. Caso 		seja utilizado mais de um numa 		expressão são avaliados da 		esquerda para a direita
+
+		Mesma coisa para adição e 		subtração
+
+	Operação com strings:
+		Não se pode executar operações 				matemáticas com strings
+
+		Porém o operador + funciona com 		strings	que representa 		concatenação
+
+		O operador * também funciona com 			strings
+		Ex:
+		>>> "Legal"*3
+		"LegalLegalLegal"
+
+	Composição:
+		É possível fazer composoções entre 		a expressão de uma variável, 		instruções e comandos isoladamente
+
+		Ex:
+		No comando print, é possível que 		se escreva uma string logo em 		seguida uma expressão ou variável, 		contanto que contenha uma virgula
+Função:
+	Defiição:
+		É uma sequência de comandos que 		executa alguma tarefa e que tem um 		nome atribuido.
+
+		Nos ajuda a organizar programas em 		pedaços que correspondam a como 		imaginamos uma solução do problema
+
+	Elementos:
+		A sintaxe utlizada é: 
+		def NOME ( PARAMENTROS ):
+			COMANDOS
+
+		Os nomes devem seguir a regra das 			palavras reservadas em Python
+
+		Os parâmetros especificam qual 				informação você deve providenciar 			para que a função possa ser usada 			(o que a função necessita para 				executar a sua tarefa)
+
+		Os parâmetros são uma lista de 				nomes que descrevem o que a função 		precisará receber do usuário da 			função.
+
+		Docstrings, são comentários feitos 		nas funções para sinalizar 				propriedades importantes das 		mesmas. Não é ignorado pelo 				interpretador, 	diferente dos 				comentarios. 
+
+	Invocando:
+		Além de ser declarada, uma função 		deve ser chamada, ou invocada, 		para que ela funcione
+
+		Funções nativas são invocadas com 		print, range e int
+
+		Funções criadas são chamadas 		através de seu nome seguida por 		uma lista de valores, chamados 		argumentos, os quais são 		atribuídosaos parâmetros da 		definição da função
+
+		Uma vez em que a função está 		criada, podemos chamar ela quantas 		vezes quisermos com quais 		atributos quisermos
+
+	Funções nativas:
+		abs: Retorna valor absoluto do 		número indicado
+		Ex:
+		print(abs(5))
+
+		pow: retorna o valor da base 		elevado ao expoente indicado
+		Ex:
+		print(math.pow(2, 3))
+		>>>8.0
+
+		max: retorna o maior valor dos 		números recebidos
+		Ex:
+		print(max(7, 11, -89))
+		>>>11
+
+		Funções que retornam valores são 		chamadas de funções frutiferas
+
+		Funções que não retornam valores 		são freuquentemente chamdas de 		procedimento
+
+Strings:
+	Methods:
+		captalize() - Converts the first 		character to upper case
+		
+		casefold() - Converts string into 		lower case
+
+		center() - Returns a cetered 		string
+
+		count() - REturns the number of 		times a scified value occurs in a 		string
+
+		encode() - Returns an encoded 		version of the string
+
+		endwith() - Returns true if the 		string ends with the specified 		value

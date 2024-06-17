@@ -1,0 +1,13 @@
+Fluxo condicional e repetção:
+	For in:
+		Utilizada para repetir um bloco de código um determinado número de vezes.
+		Vem na forma:
+		
+		For (variável temporaria) in (variável/comando):
+		-código-
+		
+		A variável temporária armazena valores de operações feitas nas repetições, ou o número de repetições num comando range. Numa lista a variável temporária pode ser atribuida aos elementos dentro dela. 
+
+		A variável externa pode ser uma lista(list), um dicionário(dict), uma booleana(bool) ou até mesmo uma variável comum.
+
+		Há comandos que podem ser utilizados dentro do for, um muito importante é o range, utilizado para contagens e muitas outras operações.

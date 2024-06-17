@@ -1,0 +1,9 @@
+Links úteis:
+
+https://docs.python.org/pt-br/3/tutorial/errors.html
+
+https://docs.python.org/pt-br/dev/library/unittest.html
+
+https://mange.ifrn.edu.br/python/aprenda-com-py3/apendice_a.html
+
+https://docs.python.org/pt-br/3/library/exceptions.html

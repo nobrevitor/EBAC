@@ -1,0 +1,7 @@
+Links úteis:
+	
+	https://docs.python.org/pt-br/3.10/library/os.path.html
+
+	https://www.guru99.com/pt/python-file-readline.html#:~:text=Python%20readline()%20%C3%A9%20um,um%20comprimento%20espec%C3%ADfico%20da%20linha.
+
+	https://mange.ifrn.edu.br/python/aprenda-com-py3/capitulo_11.html

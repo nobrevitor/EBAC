@@ -1,0 +1,5 @@
+Fluxo condicional e repetição:
+	Try e except:
+		o except é utilizado para tratamento de erros, básicamente para deixar o erro que aparece para o usuário mais bonitinho e legivel.
+		
+		try é o bloco onde o erro esta inserido para ser tratado no except

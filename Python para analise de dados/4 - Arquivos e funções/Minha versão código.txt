@@ -1,0 +1,35 @@
+Meu código do lab 4 que também funciona:
+
+with open(file= '../../data/' + nome_arquivo, mode= 'r', encoding= 'utf8') as fp:
+		line = fp.readline()
+		while line:
+			splited_line = line.split(sep='\n')
+			index = splited_line[0]
+			linha.append(index)
+			line = fp.readline()
+		linha.insert(0, ' ')	
+		for palavras in linha:
+			linha_selec = linha[numero_linha]
+			palavra_separada = linha_selec.split(sep= ' ')
+			palavras_linha.append(palavra_separada)
+		
+	return palavra_separada
+
+linha10 = extrai_linha_txt(nome_arquivo='musica.txt', numero_linha=10)
+print(linha10) 
+
+
+
+Código "correto":
+
+	with open(os.path.join('../../data/', nome_arquivo), 'r') as file:
+	# extraia a linha do arquivo utilizando o parametro 'numero_linha'
+		linha_desejada = file.readlines()[numero_linha - 1]
+	# quebre a linha em palavras com o comando split, note que o separador é um espaço ' '
+		palavras_linha = linha_desejada.split(' ')
+
+	return palavras_linha
+
+linha10 = extrai_linha_txt(nome_arquivo='musica.txt', numero_linha=5)
+print(linha10)
+

@@ -1,0 +1,13 @@
+Links úteis:
+
+	List:
+	https://www.devmedia.com.br/como-trabalhar-com-listas-em-python/37460
+
+	https://mange.ifrn.edu.br/python/aprenda-com-py3/capitulo_08.html
+
+https://aprendendo-computacao-com-python.readthedocs.io/en/latest/capitulo_08.html#glossario
+
+	Dict:
+	https://blog.somostera.com/desenvolvimento-web/dicionario-python
+
+https://mange.ifrn.edu.br/python/aprenda-com-py3/capitulo_10.html

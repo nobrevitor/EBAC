@@ -1,0 +1,61 @@
+Estrutura match case:
+	Novidade no Python, entrou na atualização de 2021. Se assemelha muito a switch case de C++.
+	Substitui as estruturas if/elif/else, ao inves de utlizar a variável várias vezes, a estrutura match fica com o valor da variável, enquanto os cases se encarregam da comparação.
+	Ex:
+	
+	Estruturação com if/elif/else:
+	
+	def dia_semana(dia):
+    if dia == 1:
+        return "Domingo"
+    elif dia == 2:
+        return "Segunda-Feira"
+    elif dia == 3:
+        return "Terça-Feira"
+    elif dia == 4:
+        return "Quarta-Feira"
+    elif dia == 5:
+        return "Quinta-Feira"
+    elif dia == 6:
+        return "Sexta-Feira"
+    elif dia == 7:
+        return "Sábado"
+    else:
+        return "Valor {} inválido".format(dia)
+
+	Estruturação com match case:
+
+	def dia_semana(dia):
+    match dia:
+        case 1:
+            return "Domingo"
+        case 2:
+            return "Segunda-Feira"
+        case 3:
+            return "Terça-Feira"
+        case 4:
+            return "Quarta-Feira"
+        case 5:
+            return "Quinta-Feira"
+        case 6:
+            return "Sexta-Feira"
+        case 7:
+            return "Sábado"
+        case _:
+            return "Valor {} inválido".format(dia)
+
+	Podemos utilizar a estrutura match case para criar listas também:
+	
+	def contas(centros):
+    match centros:
+        case [area, centros]: # Apenas 1 centro de custo
+            print("A área {} possui o centro de custo {}".format(area,centros))
+
+        case [area, *centros]: #2 ou mais centros
+            print( ' A área {} possui os centros de custo abaixo:'.format(area))
+            for centro in centros:
+                print (centro)
+
+
+contas(['Financeiro', 'ABC'])
+contas(['Marketing', 'ABC','XYZ','HJG'])

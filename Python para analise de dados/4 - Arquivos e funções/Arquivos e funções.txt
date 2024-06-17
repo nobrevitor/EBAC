@@ -1,0 +1,108 @@
+Arquivos:
+	São espaços de dados tipificados armazenados na memória.
+	Para trabalhar com arquivos é muito simples, basta imaginar que está trabalhado com livros. Quando utiliza um livro, antes de tudo, se abre ele, e quando termina, se fecha.
+	Enquanto o livro estiver aberto, você pode ler ou escrever nele.
+
+	Para abrir o arquivo:
+
+	f = open("teste.dat", "w")
+	
+	ou
+
+	with open(file='teste.dat', mode='w', encoding='utf8') as f:
+
+
+	Para escrever dentro de um arquivo, se utiliza do método write:
+	
+	f.write('Agora é hora')
+	f.write('de fechar o arquivo')
+
+
+	Para fechar o arquivo e dizer ao sistema que terminamos de escrever ou gravar, e que o arquvio está livre para ser lido:
+	
+	f.close()
+
+
+	Para ler o arquivo:
+
+	f = open("teste.dat", "r")
+
+	ou 
+
+	with open(file='teste.dat', mode='r', encoding='utf8') as f:
+
+
+	Também podemos indicar quanto caracteres queremos ler:
+	
+	f = open("teste.dat", "r")
+	print (f.read(9))
+	
+
+
+	Métodos:
+	
+		Readline:
+		 Utilizado na forma:
+	
+		fp.readline()
+
+		 Lê cada linha do arquivo separadamente em sequência e retorna uma string.
+
+	
+		Readlines:
+		 Utilizado na forma:
+
+		fp.readlines()
+		ou
+		fp.readlines()[numero_linha]
+
+		 Lê todas as linhas do arquivo ou até onde você deseja e retorna uma lista separando os elementos pelo caractere de quebra de linha. 
+
+		Write:
+		 O método write tem que ser uma string, por isso se quisermos adicionar outros valores dentro do nosso arquivo, devemos antes converter os mesmos para tipo string.
+
+		 Podemos utlizar o método de formatação %, quando aplicados a inteiros é o operador módulo, mas quando aplicado a strings % é o operador de formatação.
+			
+			Ex:
+			carros = 52
+			"Em julho vendemos %d carros." % carros
+
+			Ex:
+			"Em %d dias fizemos %f milhões %s." % (34,6.1,'reais')
+			'Em 34 dias fizemos 6.100000 milhões de reais.'
+
+			Neste exemplo, %d serve para inteiros(int), %f serve para decimais(float) e %s serve para strings(str)
+
+	Pickling:
+		Para colocar valores em um arquivo, deve-se converter em strings:
+		f.write (str(12.3))
+		f.write (str([1,2,3]))
+
+		O problema é que quando você lê de volta o valor, você tem uma string. O tipo original da informação foir perdido. Não se sabe onde começa e onde termina um valor:
+		f.readline()
+		"12.3[1, 2, 3]"
+
+		Para isso existe o pickling, chamado assim pois ele preserva a estrutura de dados. O módulo pickel contém os comandos necessários. Para usar deve-se importar o pickle:
+
+		import pickle
+		f = open('test.pck', 'w')
+
+		Para armazenar uma estrutura de dados se usa o método dump:
+		
+		pickle.dump(12.3, f)
+		pickle.dump([1,2,3], f)
+		f.close()
+
+		Então podemos abrir o arquivo que e carregar as estruturas de dados que foram descarreagadas:
+
+		f = open("test.pck", "r")
+		>>> x = pickle.load(f)
+		>>> x
+		12,3
+		>>> type(x)
+		<class "float">
+		>>> y = pickle.load(f)
+		>>> y
+		[1, 2, 3]
+		>>> type(y)
+		<class "list">

@@ -1,0 +1,150 @@
+Estrutura de dados:
+	
+	Listas ou Python List:
+		É uma estrutura de dados composta por itens organizados de forma linear, na qual cada um pode ser acessado a partir de um índice, que representa sua posição na coleção (iniciando em zero).
+
+	Criando listas:
+		Uma lista é representada como uma sequência de objetos separados por vírgula e dentro de colchetes[].
+
+	Operadores de lista:
+		Para acessar informções dentro das listas se utiliza dos indices, cada um corresponde a um elemento dentro de uma lista, para acessar a informação desejada basta buscar atravez do índice.
+		Ex:
+		lista = ['O carro','peixe',123,111]
+		lista[2]
+		>>> 123
+	
+	Comprimento de uma lista:
+		O comprimento ou número de itens que a compõem, pode ser obtido a partir da função len()
+		Ex:
+		lista = ['O carro','peixe',123,111]
+		len(lista)
+		>>> 4
+	
+	Concatenação e multiplicação:
+		Também é possível concatenar listas por meio do operador de adição + e multiplicá-las por um inteiro, o que gerará várias cópias dos seus itens.
+		Ex:
+		lista = ['O carro','peixe',123,111]
+		nova_lista = ['pedra', lista]
+		
+		lista + nova_lista
+		
+		>>> ['O carro','peixe',123,111, 'pedra', ['O carro','peixe',123,111]]
+
+		
+		Ex:
+		lista = ['O carro','peixe',123,111]
+		
+		lista*3
+
+		>>> ['O carro azul', 'peixe', 123, 111, 'O carro azul', 'peixe', 123, 111, 'O carro azul', 'peixe', 123, 111]
+
+	Verificando a existência de itens em uma lista:
+		Em alguns casos é preciso verificar se um determinado valor está contido em uma lista. Para isso utlizamos o operador in, que indicará True se o objeto pertencer ao conjunto, e False caso contrário.
+
+		Ex:
+		lista = ['O carro','peixe',123,111]
+
+		'peixe' in lista
+		>>> True
+		
+		'gato' in lista
+		>>> False
+
+	Valores mínimos, máximos e soma:
+		Ainda há funções min(), max() e sum(), através das quais é possível encontrar, respectivamente, o menor valor, o maior valor ou ainda realizar a soma de todos os elementos da lista.
+
+		Ex:
+		numeros = [14.55, 67, 89.88, 10, 21.5]
+		min(numeros)
+		>>>10
+		
+		max(numeros)
+		>>>89.88
+
+		sum(numeros)
+		>>>202.93
+
+	Métodos das listas:
+	Append:
+		O primeiro método a ser analisado é o append(), que tem por objetivo adicionar um novo elemento no final da lista.
+		
+		Ex:
+		livros = ['Java','SqlServer', 'Delphi','Python']
+		livros.append('Android')
+		livros
+		>>>['Java', 'SqlServer', 'Delphi', 'Python', 'Android']
+
+	Insert:
+		Caso desejemos fazer essa inserção em uma posição específica, podemos utilizar o método insert() que, além do elemento a ser inserido, recebe também o índice que ele deve assumir.
+
+		Ex:
+		livros = ['Java', 'SqlServer', 'Delphi', 'Python', 'Android']
+		livros.insert(0,'Oracle')
+		livros
+		>>>['Oracle', 'Java', 'SqlServer', 'Delphi', 'Python', 'Android']
+
+	Pop:
+		O próximo método importante é o pop(), que remove o último item da lista e o retorna como resultado da operação. Caso seja necessário remover um índice específico, basta informá-lo como argumento. 
+
+		Ex:
+		livros
+ 		>>>['Java', 'SqlServer', 'Delphi', 'Python', 'Android']
+ 		livros.pop()
+ 		>>>'Android'
+ 		livros.pop(1)
+ 		>>>'SqlServer'
+		livros
+		>>>['Java', 'Python', 'Delphi']
+
+	Remove:
+		Temos o método remove(item) que, conforme mostra no exemplo abaixo, remove a primeira ocorrência do item passado como parâmetro. Ou seja, Pop remove a partir do índice e remove a partir do valor.
+		
+		Ex:
+		livros
+
+		>>>['Oracle', 'Java', 'SqlServer', 'Delphi', 'Python', 'Android', 'Oracle']
+
+		livros.remove('Oracle')
+		livros
+
+		>>>['Java', 'SqlServer', 'Delphi', 'Python', 'Android', 'Oracle']
+		
+		
+		livros.remove('Oracle')
+		livros
+
+		>>>['Java', 'SqlServer', 'Delphi', 'Python', 'Android']
+		
+		livros.remove('Oracle')
+	 Traceback (most recent call last):
+	  File "<pyshell#34>", line 1, in <module>
+	    livros.remove('Oracle')
+	 ValueError: list.remove(x): x not in list
+
+	Sort e Reverse:
+		Outros métodos muito importantes ao trabalhar com listas são o sort(), que ordena a lista, e o reverse(), que inverte as posições dos itens. No caso da ordenação, ela será feita em ordem crescente para números e em ordem lexicográfica para strings, ou seja, na forma como são ordenadas no dicionário.
+
+		Ex:
+		livros
+ 		>>>['Java', 'SqlServer', 'Delphi', 'Python', 'Android']
+
+ 		livros.reverse()
+ 		livros
+
+		>>>['Android', 'Python', 'Delphi', 'SqlServer', 'Java']
+
+		livros.sort()
+ 		livros
+		>>>['Android', 'Delphi', 'Java', 'Python', 'SqlServer']
+
+	Count:
+		Por fim, temos ainda o método count(), que retorna o número de ocorrências de determinado objeto, passado como parâmetro, em uma lista.
+
+		Ex:
+		livros = ['Oracle', 'Java', 'SqlServer', 'Delphi', 'Python', 'Android', 'Oracle']
+ 		livros.count('Python')
+
+ 		>>>1
+
+ 		livros.count('Oracle')
+		>>>2

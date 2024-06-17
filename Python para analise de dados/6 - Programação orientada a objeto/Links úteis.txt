@@ -1,0 +1,10 @@
+Links úteis:
+
+https://panda.ime.usp.br/pensepy/static/pensepy/13-Classes/classesintro.html
+
+https://panda.ime.usp.br/pensepy/static/pensepy/13-Classes/fracoes.html
+
+https://docs.python.org/pt-br/3/tutorial/classes.html#a-first-look-at-classes
+
+https://docs.python.org/pt-br/3/reference/datamodel.html#id17
+

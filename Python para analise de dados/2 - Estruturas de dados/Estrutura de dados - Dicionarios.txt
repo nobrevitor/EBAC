@@ -1,0 +1,65 @@
+Estrutura de dados:
+	
+	Dicionarios:
+		Os dicionários Python são uma coleção que guarda valores multidimensionais para cada índice. Diferentemente de uma lista encadeada, que guarda apenas um valor por vez. Assim, é possível gerar estruturas mais complexas que simulam melhor a realidade e conseguem mapear instâncias do mundo real em um programa de software.
+
+		É uma coleção que consiste em chaves e valores correspondentes, quase como uma associação entre dois conjuntos. É também uma coleção ordenada, mutável, indexada e que não possibilita a inserção de elementos repetidos.
+
+	Como criar:
+		
+		dicionario = {“a”: 1, “b”: 2}
+
+		dicio = dict(primeiro=1, segundo=2, terceiro=3)
+
+	Percorrer:
+		pc = {'CPU': 'Intel', 'RAM': '8gb', 'SSD': '250bg'}
+
+		for chave in pc.keys():
+
+			print(f'Chave = {chave} e v = {pc[chave]}')
+
+	Deletar elemento:
+		
+		pessoa = {'nome': 'Matheus', 'idade': 18, 'tamanho': 1.60}
+
+		del pessoa['tamanho']
+
+		print(pessoa)
+
+	Métodos nativos de dicionários em Python:
+
+		1. Keys
+			Esse método retorna todas as chaves do dicionário em uma lista.
+
+		2. Values
+			Retorna todos os valores do dicionário em uma lista.
+
+		3.Items
+			Retorna todos os valores e chaves relacionadas.
+
+		4.HasKey
+			Procura se existe uma chave dentro do dicionário Python.
+		
+		5.Clear
+			Remove todos os elementos do dicionário.
+	
+		6.Get
+			Pega o conteúdo de cada chave.
+		
+		7.Update
+			Serve para concatenar dicionários e atualizar os elementos de um com componentes de outro.
+
+		8. Pop
+			Remove um elemento especificado do dicionário e o retorna.
+
+		9.Len
+			Usado para descobrir o tamanho de uma coleção do tipo dicionário.
+
+		10. Copy
+
+			Copia os elementos de um dicionário para inserir em outro.
+
+		11. fromkeys()
+			Cria um novo dicionário com as chaves especificadas como parâmetro.
+
+		

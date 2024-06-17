@@ -1,0 +1,9 @@
+Links úteis:
+
+	Programação Funcional:
+
+https://wiki.python.org.br/PythonFuncional
+
+	Glossário:
+
+https://docs.python.org/3/glossary.html#term-generator
