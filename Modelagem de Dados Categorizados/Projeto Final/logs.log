@@ -1,0 +1,881 @@
+2025-08-09 19:44:59,421:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-09 19:44:59,421:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-09 19:44:59,421:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-09 19:44:59,421:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-09 19:45:02,153:INFO:PyCaret ClassificationExperiment
+2025-08-09 19:45:02,153:INFO:Logging name: clf-default-name
+2025-08-09 19:45:02,154:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2025-08-09 19:45:02,154:INFO:version 3.3.2
+2025-08-09 19:45:02,154:INFO:Initializing setup()
+2025-08-09 19:45:02,155:INFO:self.USI: 4345
+2025-08-09 19:45:02,155:INFO:self._variable_keys: {'X', 'target_param', 'fold_groups_param', 'logging_param', 'fold_shuffle_param', 'fold_generator', 'fix_imbalance', 'memory', 'y_train', 'is_multiclass', 'y_test', 'data', 'html_param', 'idx', 'X_train', 'exp_name_log', 'gpu_param', '_ml_usecase', '_available_plots', 'gpu_n_jobs_param', 'USI', 'seed', 'log_plots_param', 'y', 'X_test', 'n_jobs_param', 'pipeline', 'exp_id'}
+2025-08-09 19:45:02,155:INFO:Checking environment
+2025-08-09 19:45:02,155:INFO:python_version: 3.11.7
+2025-08-09 19:45:02,155:INFO:python_build: ('main', 'Dec 15 2023 18:05:47')
+2025-08-09 19:45:02,155:INFO:machine: AMD64
+2025-08-09 19:45:02,155:INFO:platform: Windows-10-10.0.19045-SP0
+2025-08-09 19:45:02,155:INFO:Memory: svmem(total=8474312704, available=1106604032, percent=86.9, used=7367708672, free=1106604032)
+2025-08-09 19:45:02,156:INFO:Physical Core: 2
+2025-08-09 19:45:02,156:INFO:Logical Core: 4
+2025-08-09 19:45:02,156:INFO:Checking libraries
+2025-08-09 19:45:02,156:INFO:System:
+2025-08-09 19:45:02,156:INFO:    python: 3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]
+2025-08-09 19:45:02,156:INFO:executable: c:\Users\nobre\anaconda3\python.exe
+2025-08-09 19:45:02,156:INFO:   machine: Windows-10-10.0.19045-SP0
+2025-08-09 19:45:02,156:INFO:PyCaret required dependencies:
+2025-08-09 19:45:08,650:INFO:                 pip: 23.3.1
+2025-08-09 19:45:08,650:INFO:          setuptools: 68.2.2
+2025-08-09 19:45:08,650:INFO:             pycaret: 3.3.2
+2025-08-09 19:45:08,650:INFO:             IPython: 8.20.0
+2025-08-09 19:45:08,650:INFO:          ipywidgets: 7.6.5
+2025-08-09 19:45:08,650:INFO:                tqdm: 4.65.0
+2025-08-09 19:45:08,650:INFO:               numpy: 1.26.4
+2025-08-09 19:45:08,650:INFO:              pandas: 2.1.4
+2025-08-09 19:45:08,650:INFO:              jinja2: 3.1.3
+2025-08-09 19:45:08,650:INFO:               scipy: 1.11.4
+2025-08-09 19:45:08,650:INFO:              joblib: 1.2.0
+2025-08-09 19:45:08,650:INFO:             sklearn: 1.4.2
+2025-08-09 19:45:08,650:INFO:                pyod: 2.0.2
+2025-08-09 19:45:08,650:INFO:            imblearn: 0.12.4
+2025-08-09 19:45:08,650:INFO:   category_encoders: 2.6.4
+2025-08-09 19:45:08,650:INFO:            lightgbm: 4.4.0
+2025-08-09 19:45:08,650:INFO:               numba: 0.59.0
+2025-08-09 19:45:08,650:INFO:            requests: 2.32.3
+2025-08-09 19:45:08,650:INFO:          matplotlib: 3.7.5
+2025-08-09 19:45:08,650:INFO:          scikitplot: 0.3.7
+2025-08-09 19:45:08,650:INFO:         yellowbrick: 1.5
+2025-08-09 19:45:08,650:INFO:              plotly: 5.24.1
+2025-08-09 19:45:08,650:INFO:    plotly-resampler: Not installed
+2025-08-09 19:45:08,650:INFO:             kaleido: 0.2.1
+2025-08-09 19:45:08,650:INFO:           schemdraw: 0.15
+2025-08-09 19:45:08,650:INFO:         statsmodels: 0.14.0
+2025-08-09 19:45:08,650:INFO:              sktime: 0.26.0
+2025-08-09 19:45:08,650:INFO:               tbats: 1.1.3
+2025-08-09 19:45:08,650:INFO:            pmdarima: 2.0.4
+2025-08-09 19:45:08,650:INFO:              psutil: 5.9.0
+2025-08-09 19:45:08,650:INFO:          markupsafe: 2.1.3
+2025-08-09 19:45:08,650:INFO:             pickle5: Not installed
+2025-08-09 19:45:08,650:INFO:         cloudpickle: 2.2.1
+2025-08-09 19:45:08,650:INFO:         deprecation: 2.1.0
+2025-08-09 19:45:08,650:INFO:              xxhash: 3.5.0
+2025-08-09 19:45:08,650:INFO:           wurlitzer: 3.1.1
+2025-08-09 19:45:08,650:INFO:PyCaret optional dependencies:
+2025-08-09 19:45:08,900:INFO:                shap: Not installed
+2025-08-09 19:45:08,900:INFO:           interpret: Not installed
+2025-08-09 19:45:08,900:INFO:                umap: Not installed
+2025-08-09 19:45:08,900:INFO:     ydata_profiling: 4.12.0
+2025-08-09 19:45:08,900:INFO:  explainerdashboard: Not installed
+2025-08-09 19:45:08,900:INFO:             autoviz: Not installed
+2025-08-09 19:45:08,900:INFO:           fairlearn: Not installed
+2025-08-09 19:45:08,900:INFO:          deepchecks: Not installed
+2025-08-09 19:45:08,900:INFO:             xgboost: 2.1.0
+2025-08-09 19:45:08,900:INFO:            catboost: Not installed
+2025-08-09 19:45:08,900:INFO:              kmodes: Not installed
+2025-08-09 19:45:08,900:INFO:             mlxtend: Not installed
+2025-08-09 19:45:08,900:INFO:       statsforecast: Not installed
+2025-08-09 19:45:08,900:INFO:        tune_sklearn: Not installed
+2025-08-09 19:45:08,900:INFO:                 ray: Not installed
+2025-08-09 19:45:08,900:INFO:            hyperopt: Not installed
+2025-08-09 19:45:08,900:INFO:              optuna: Not installed
+2025-08-09 19:45:08,900:INFO:               skopt: Not installed
+2025-08-09 19:45:08,900:INFO:              mlflow: Not installed
+2025-08-09 19:45:08,900:INFO:              gradio: Not installed
+2025-08-09 19:45:08,900:INFO:             fastapi: Not installed
+2025-08-09 19:45:08,900:INFO:             uvicorn: Not installed
+2025-08-09 19:45:08,900:INFO:              m2cgen: Not installed
+2025-08-09 19:45:08,900:INFO:           evidently: Not installed
+2025-08-09 19:45:08,900:INFO:               fugue: Not installed
+2025-08-09 19:45:08,900:INFO:           streamlit: 1.30.0
+2025-08-09 19:45:08,900:INFO:             prophet: Not installed
+2025-08-09 19:45:08,900:INFO:None
+2025-08-09 19:45:08,900:INFO:Set up data.
+2025-08-09 19:45:09,750:INFO:Set up folding strategy.
+2025-08-09 19:45:09,750:INFO:Set up train/test split.
+2025-08-09 19:45:10,333:INFO:Set up index.
+2025-08-09 19:45:10,367:INFO:Assigning column types.
+2025-08-09 19:45:10,582:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-08-09 19:45:10,682:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-08-09 19:45:10,699:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-09 19:45:10,782:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:10,782:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:10,882:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-08-09 19:45:10,882:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-09 19:45:10,949:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:10,949:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:10,965:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-08-09 19:45:11,049:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-09 19:45:11,115:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:11,115:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:11,215:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-09 19:45:11,282:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:11,298:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:11,298:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2025-08-09 19:45:11,449:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:11,449:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:11,615:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:11,615:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:11,615:INFO:Preparing preprocessing pipeline...
+2025-08-09 19:45:11,664:INFO:Set up simple imputation.
+2025-08-09 19:45:11,899:INFO:Set up encoding of ordinal features.
+2025-08-09 19:45:12,098:INFO:Set up encoding of categorical features.
+2025-08-09 19:45:19,751:INFO:Finished creating preprocessing pipeline.
+2025-08-09 19:45:19,813:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\nobre\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean')...
+                                                               verbose=0))),
+                ('onehot_encoding',
+                 TransformerWrapper(exclude=None,
+                                    include=['tipo_renda', 'educacao',
+                                             'estado_civil',
+                                             'tipo_residencia'],
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False)
+2025-08-09 19:45:19,813:INFO:Creating final display dataframe.
+2025-08-09 19:45:43,917:WARNING:c:\Users\nobre\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py:111: UserWarning: Persisting input arguments took 0.57s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2025-08-09 19:45:55,786:INFO:Setup _display_container:                     Description             Value
+0                    Session id              5951
+1                        Target               mau
+2                   Target type            Binary
+3           Original data shape      (712500, 13)
+4        Transformed data shape      (712500, 30)
+5   Transformed train set shape      (498749, 30)
+6    Transformed test set shape      (213751, 30)
+7              Numeric features                 5
+8          Categorical features                 7
+9      Rows with missing values             16.8%
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator   StratifiedKFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  clf-default-name
+22                          USI              4345
+2025-08-09 19:45:56,065:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:56,065:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:56,237:INFO:Soft dependency imported: xgboost: 2.1.0
+2025-08-09 19:45:56,237:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-08-09 19:45:56,252:INFO:setup() successfully completed in 54.24s...............
+2025-08-09 19:45:56,264:INFO:Initializing create_model()
+2025-08-09 19:45:56,264:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-09 19:45:56,264:INFO:Checking exceptions
+2025-08-09 19:45:56,419:INFO:Importing libraries
+2025-08-09 19:45:56,419:INFO:Copying training dataset
+2025-08-09 19:45:57,087:INFO:Defining folds
+2025-08-09 19:45:57,087:INFO:Declaring metric variables
+2025-08-09 19:45:57,087:INFO:Importing untrained model
+2025-08-09 19:45:57,102:INFO:Light Gradient Boosting Machine Imported successfully
+2025-08-09 19:45:57,133:INFO:Starting cross validation
+2025-08-09 19:45:57,133:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-09 19:47:33,389:INFO:Calculating mean and std
+2025-08-09 19:47:33,396:INFO:Creating metrics dataframe
+2025-08-09 19:47:33,417:INFO:Finalizing model
+2025-08-09 19:47:40,331:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-08-09 19:47:40,347:INFO:[LightGBM] [Info] Number of positive: 38971, number of negative: 459778
+2025-08-09 19:47:40,497:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.057173 seconds.
+2025-08-09 19:47:40,497:INFO:You can set `force_row_wise=true` to remove the overhead.
+2025-08-09 19:47:40,497:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2025-08-09 19:47:40,514:INFO:[LightGBM] [Info] Total Bins 624
+2025-08-09 19:47:40,514:INFO:[LightGBM] [Info] Number of data points in the train set: 498749, number of used features: 29
+2025-08-09 19:47:40,514:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.078138 -> initscore=-2.467926
+2025-08-09 19:47:40,514:INFO:[LightGBM] [Info] Start training from score -2.467926
+2025-08-09 19:47:44,595:INFO:Uploading results into container
+2025-08-09 19:47:44,595:INFO:Uploading model into container now
+2025-08-09 19:47:44,662:INFO:_master_model_container: 1
+2025-08-09 19:47:44,662:INFO:_display_container: 2
+2025-08-09 19:47:44,662:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=5951, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-08-09 19:47:44,662:INFO:create_model() successfully completed......................................
+2025-08-09 19:47:46,545:INFO:Initializing tune_model()
+2025-08-09 19:47:46,545:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=5951, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2025-08-09 19:47:46,545:INFO:Checking exceptions
+2025-08-09 19:47:47,225:INFO:Copying training dataset
+2025-08-09 19:47:47,795:INFO:Checking base model
+2025-08-09 19:47:47,795:INFO:Base model : Light Gradient Boosting Machine
+2025-08-09 19:47:47,810:INFO:Declaring metric variables
+2025-08-09 19:47:47,826:INFO:Defining Hyperparameters
+2025-08-09 19:47:48,185:INFO:Tuning with n_jobs=-1
+2025-08-09 19:47:48,185:INFO:Initializing RandomizedSearchCV
+2025-08-09 20:11:48,300:INFO:best_params: {'actual_estimator__reg_lambda': 10, 'actual_estimator__reg_alpha': 0.005, 'actual_estimator__num_leaves': 6, 'actual_estimator__n_estimators': 260, 'actual_estimator__min_split_gain': 0, 'actual_estimator__min_child_samples': 66, 'actual_estimator__learning_rate': 0.15, 'actual_estimator__feature_fraction': 0.6, 'actual_estimator__bagging_freq': 0, 'actual_estimator__bagging_fraction': 0.5}
+2025-08-09 20:11:48,301:INFO:Hyperparameter search completed
+2025-08-09 20:11:48,302:INFO:SubProcess create_model() called ==================================
+2025-08-09 20:11:48,304:INFO:Initializing create_model()
+2025-08-09 20:11:48,304:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=5951, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000267F7752A50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 10, 'reg_alpha': 0.005, 'num_leaves': 6, 'n_estimators': 260, 'min_split_gain': 0, 'min_child_samples': 66, 'learning_rate': 0.15, 'feature_fraction': 0.6, 'bagging_freq': 0, 'bagging_fraction': 0.5})
+2025-08-09 20:11:48,304:INFO:Checking exceptions
+2025-08-09 20:11:48,305:INFO:Importing libraries
+2025-08-09 20:11:48,305:INFO:Copying training dataset
+2025-08-09 20:11:48,823:INFO:Defining folds
+2025-08-09 20:11:48,824:INFO:Declaring metric variables
+2025-08-09 20:11:48,842:INFO:Importing untrained model
+2025-08-09 20:11:48,842:INFO:Declaring custom model
+2025-08-09 20:11:48,860:INFO:Light Gradient Boosting Machine Imported successfully
+2025-08-09 20:11:48,884:INFO:Starting cross validation
+2025-08-09 20:11:48,884:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-09 20:14:10,101:INFO:Calculating mean and std
+2025-08-09 20:14:10,104:INFO:Creating metrics dataframe
+2025-08-09 20:14:10,123:INFO:Finalizing model
+2025-08-09 20:14:18,231:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 20:14:18,231:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 20:14:18,231:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 20:14:18,753:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-08-09 20:14:18,769:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 20:14:18,770:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 20:14:18,770:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 20:14:18,772:INFO:[LightGBM] [Info] Number of positive: 38971, number of negative: 459778
+2025-08-09 20:14:18,989:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.074348 seconds.
+2025-08-09 20:14:18,989:INFO:You can set `force_row_wise=true` to remove the overhead.
+2025-08-09 20:14:18,989:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2025-08-09 20:14:18,990:INFO:[LightGBM] [Info] Total Bins 624
+2025-08-09 20:14:18,990:INFO:[LightGBM] [Info] Number of data points in the train set: 498749, number of used features: 29
+2025-08-09 20:14:18,996:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.078138 -> initscore=-2.467926
+2025-08-09 20:14:18,997:INFO:[LightGBM] [Info] Start training from score -2.467926
+2025-08-09 20:14:28,786:INFO:Uploading results into container
+2025-08-09 20:14:28,788:INFO:Uploading model into container now
+2025-08-09 20:14:28,791:INFO:_master_model_container: 2
+2025-08-09 20:14:28,791:INFO:_display_container: 3
+2025-08-09 20:14:28,792:INFO:LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-08-09 20:14:28,793:INFO:create_model() successfully completed......................................
+2025-08-09 20:14:29,130:INFO:SubProcess create_model() end ==================================
+2025-08-09 20:14:29,130:INFO:choose_better activated
+2025-08-09 20:14:29,141:INFO:SubProcess create_model() called ==================================
+2025-08-09 20:14:29,143:INFO:Initializing create_model()
+2025-08-09 20:14:29,144:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=5951, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-09 20:14:29,144:INFO:Checking exceptions
+2025-08-09 20:14:29,148:INFO:Importing libraries
+2025-08-09 20:14:29,148:INFO:Copying training dataset
+2025-08-09 20:14:29,651:INFO:Defining folds
+2025-08-09 20:14:29,651:INFO:Declaring metric variables
+2025-08-09 20:14:29,651:INFO:Importing untrained model
+2025-08-09 20:14:29,651:INFO:Declaring custom model
+2025-08-09 20:14:29,653:INFO:Light Gradient Boosting Machine Imported successfully
+2025-08-09 20:14:29,654:INFO:Starting cross validation
+2025-08-09 20:14:29,658:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-09 22:34:27,395:INFO:Calculating mean and std
+2025-08-09 22:34:27,395:INFO:Creating metrics dataframe
+2025-08-09 22:34:27,395:INFO:Finalizing model
+2025-08-09 22:34:36,540:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-08-09 22:34:36,557:INFO:[LightGBM] [Info] Number of positive: 38971, number of negative: 459778
+2025-08-09 22:34:36,774:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.099953 seconds.
+2025-08-09 22:34:36,774:INFO:You can set `force_row_wise=true` to remove the overhead.
+2025-08-09 22:34:36,774:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2025-08-09 22:34:36,774:INFO:[LightGBM] [Info] Total Bins 624
+2025-08-09 22:34:36,774:INFO:[LightGBM] [Info] Number of data points in the train set: 498749, number of used features: 29
+2025-08-09 22:34:36,791:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.078138 -> initscore=-2.467926
+2025-08-09 22:34:36,792:INFO:[LightGBM] [Info] Start training from score -2.467926
+2025-08-09 22:34:41,288:INFO:Uploading results into container
+2025-08-09 22:34:41,288:INFO:Uploading model into container now
+2025-08-09 22:34:41,288:INFO:_master_model_container: 3
+2025-08-09 22:34:41,288:INFO:_display_container: 4
+2025-08-09 22:34:41,288:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=5951, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-08-09 22:34:41,288:INFO:create_model() successfully completed......................................
+2025-08-09 22:34:41,588:INFO:SubProcess create_model() end ==================================
+2025-08-09 22:34:41,588:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=5951, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for Accuracy is 0.9221
+2025-08-09 22:34:41,588:INFO:LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for Accuracy is 0.9222
+2025-08-09 22:34:41,605:INFO:LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) is best model
+2025-08-09 22:34:41,605:INFO:choose_better completed
+2025-08-09 22:34:41,622:INFO:_master_model_container: 3
+2025-08-09 22:34:41,622:INFO:_display_container: 3
+2025-08-09 22:34:41,638:INFO:LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-08-09 22:34:41,638:INFO:tune_model() successfully completed......................................
+2025-08-09 22:34:41,971:INFO:Initializing plot_model()
+2025-08-09 22:34:41,972:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), plot=feature, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-09 22:34:41,972:INFO:Checking exceptions
+2025-08-09 22:34:42,309:INFO:Preloading libraries
+2025-08-09 22:34:42,334:INFO:Copying training dataset
+2025-08-09 22:34:42,334:INFO:Plot type: feature
+2025-08-09 22:34:42,340:WARNING:No coef_ found. Trying feature_importances_
+2025-08-09 22:34:48,047:INFO:Visual Rendered Successfully
+2025-08-09 22:34:48,297:INFO:plot_model() successfully completed......................................
+2025-08-09 22:34:48,824:INFO:Initializing plot_model()
+2025-08-09 22:34:48,824:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), plot=pr, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-09 22:34:48,824:INFO:Checking exceptions
+2025-08-09 22:34:48,979:INFO:Preloading libraries
+2025-08-09 22:34:49,320:INFO:Copying training dataset
+2025-08-09 22:34:49,321:INFO:Plot type: pr
+2025-08-09 22:34:57,399:INFO:Fitting Model
+2025-08-09 22:34:57,430:INFO:Scoring test/hold-out set
+2025-08-09 22:34:57,508:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:34:57,508:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:34:57,508:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:34:58,727:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:34:58,727:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:34:58,727:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:00,646:INFO:Visual Rendered Successfully
+2025-08-09 22:35:01,013:INFO:plot_model() successfully completed......................................
+2025-08-09 22:35:01,065:INFO:Initializing plot_model()
+2025-08-09 22:35:01,065:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), plot=confusion_matrix, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-09 22:35:01,065:INFO:Checking exceptions
+2025-08-09 22:35:01,370:INFO:Preloading libraries
+2025-08-09 22:35:01,402:INFO:Copying training dataset
+2025-08-09 22:35:01,402:INFO:Plot type: confusion_matrix
+2025-08-09 22:35:04,510:INFO:Fitting Model
+2025-08-09 22:35:04,525:INFO:Scoring test/hold-out set
+2025-08-09 22:35:04,588:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:35:04,588:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:35:04,588:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:05,690:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:35:05,690:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:35:05,690:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:07,128:INFO:Visual Rendered Successfully
+2025-08-09 22:35:07,534:INFO:plot_model() successfully completed......................................
+2025-08-09 22:35:07,587:INFO:Initializing plot_model()
+2025-08-09 22:35:07,587:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), plot=auc, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-09 22:35:07,587:INFO:Checking exceptions
+2025-08-09 22:35:07,855:INFO:Preloading libraries
+2025-08-09 22:35:07,874:INFO:Copying training dataset
+2025-08-09 22:35:07,877:INFO:Plot type: auc
+2025-08-09 22:35:10,506:INFO:Fitting Model
+2025-08-09 22:35:10,538:INFO:Scoring test/hold-out set
+2025-08-09 22:35:10,600:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:35:10,600:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:35:10,600:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:11,803:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:35:11,803:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:35:11,803:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:13,771:INFO:Visual Rendered Successfully
+2025-08-09 22:35:14,044:INFO:plot_model() successfully completed......................................
+2025-08-09 22:35:14,081:INFO:Initializing finalize_model()
+2025-08-09 22:35:14,081:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-08-09 22:35:14,081:INFO:Finalizing LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-08-09 22:35:14,311:INFO:Initializing create_model()
+2025-08-09 22:35:14,311:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=LGBMClassifier(bagging_fraction=0.5, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.15, max_depth=-1,
+               min_child_samples=66, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=260, n_jobs=-1, num_leaves=6, objective=None,
+               random_state=5951, reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-09 22:35:14,311:INFO:Checking exceptions
+2025-08-09 22:35:14,314:INFO:Importing libraries
+2025-08-09 22:35:14,314:INFO:Copying training dataset
+2025-08-09 22:35:14,344:INFO:Defining folds
+2025-08-09 22:35:14,345:INFO:Declaring metric variables
+2025-08-09 22:35:14,345:INFO:Importing untrained model
+2025-08-09 22:35:14,345:INFO:Declaring custom model
+2025-08-09 22:35:14,347:INFO:Light Gradient Boosting Machine Imported successfully
+2025-08-09 22:35:14,357:INFO:Cross validation set to False
+2025-08-09 22:35:14,358:INFO:Fitting Model
+2025-08-09 22:35:23,626:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:35:23,626:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:35:23,626:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:24,266:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-08-09 22:35:24,297:INFO:[LightGBM] [Warning] feature_fraction is set=0.6, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6
+2025-08-09 22:35:24,297:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2025-08-09 22:35:24,297:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2025-08-09 22:35:24,297:INFO:[LightGBM] [Info] Number of positive: 55673, number of negative: 656827
+2025-08-09 22:35:24,552:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.076455 seconds.
+2025-08-09 22:35:24,552:INFO:You can set `force_row_wise=true` to remove the overhead.
+2025-08-09 22:35:24,552:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2025-08-09 22:35:24,552:INFO:[LightGBM] [Info] Total Bins 624
+2025-08-09 22:35:24,552:INFO:[LightGBM] [Info] Number of data points in the train set: 712500, number of used features: 29
+2025-08-09 22:35:24,552:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.078138 -> initscore=-2.467925
+2025-08-09 22:35:24,552:INFO:[LightGBM] [Info] Start training from score -2.467925
+2025-08-09 22:35:35,114:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWra...
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=0.6,
+                                importance_type='split', learning_rate=0.15,
+                                max_depth=-1, min_child_samples=66,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                objective=None, random_state=5951,
+                                reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2025-08-09 22:35:35,114:INFO:create_model() successfully completed......................................
+2025-08-09 22:35:35,414:INFO:_master_model_container: 3
+2025-08-09 22:35:35,414:INFO:_display_container: 3
+2025-08-09 22:35:35,497:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWra...
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=0.6,
+                                importance_type='split', learning_rate=0.15,
+                                max_depth=-1, min_child_samples=66,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                objective=None, random_state=5951,
+                                reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2025-08-09 22:35:35,497:INFO:finalize_model() successfully completed......................................
+2025-08-09 22:35:36,036:INFO:Initializing predict_model()
+2025-08-09 22:35:36,036:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWra...
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=0.6,
+                                importance_type='split', learning_rate=0.15,
+                                max_depth=-1, min_child_samples=66,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                objective=None, random_state=5951,
+                                reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002680912E660>)
+2025-08-09 22:35:36,036:INFO:Checking exceptions
+2025-08-09 22:35:36,036:INFO:Preloading libraries
+2025-08-09 22:35:41,469:INFO:Initializing predict_model()
+2025-08-09 22:35:41,469:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002675A6B8B50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWra...
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=0.6,
+                                importance_type='split', learning_rate=0.15,
+                                max_depth=-1, min_child_samples=66,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                objective=None, random_state=5951,
+                                reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000026809E83240>)
+2025-08-09 22:35:41,470:INFO:Checking exceptions
+2025-08-09 22:35:41,470:INFO:Preloading libraries
+2025-08-09 22:35:41,479:INFO:Set up data.
+2025-08-09 22:35:41,693:INFO:Set up index.
+2025-08-09 22:35:43,163:INFO:Initializing save_model()
+2025-08-09 22:35:43,163:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWra...
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=0.6,
+                                importance_type='split', learning_rate=0.15,
+                                max_depth=-1, min_child_samples=66,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                objective=None, random_state=5951,
+                                reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), model_name=model_final_pycaret, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\nobre\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean')...
+                                                               verbose=0))),
+                ('onehot_encoding',
+                 TransformerWrapper(exclude=None,
+                                    include=['tipo_renda', 'educacao',
+                                             'estado_civil',
+                                             'tipo_residencia'],
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2025-08-09 22:35:43,164:INFO:Adding model into prep_pipe
+2025-08-09 22:35:43,164:WARNING:Only Model saved as it was a pipeline.
+2025-08-09 22:35:43,215:INFO:model_final_pycaret.pkl saved in current working directory
+2025-08-09 22:35:43,346:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWra...
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=0.6,
+                                importance_type='split', learning_rate=0.15,
+                                max_depth=-1, min_child_samples=66,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                objective=None, random_state=5951,
+                                reg_alpha=0.005, reg_lambda=10, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2025-08-09 22:35:43,346:INFO:save_model() successfully completed......................................
+2025-08-11 17:36:41,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:36:41,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:36:41,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:36:41,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:37:11,586:INFO:Initializing load_model()
+2025-08-11 17:37:11,586:INFO:load_model(model_name=LR Model Aula 5 062022, platform=None, authentication=None, verbose=True)
+2025-08-11 17:37:34,264:INFO:Initializing load_model()
+2025-08-11 17:37:34,264:INFO:load_model(model_name=LR Model Aula 5 062022, platform=None, authentication=None, verbose=True)
+2025-08-11 17:39:17,975:INFO:Initializing load_model()
+2025-08-11 17:39:17,975:INFO:load_model(model_name=model_final_pycaret, platform=None, authentication=None, verbose=True)
+2025-08-11 17:39:24,325:INFO:Initializing predict_model()
+2025-08-11 17:39:24,325:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002756988D350>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.5, bagging_freq=0,
+                                feature_fraction=0.6, learning_rate=0.15,
+                                min_child_samples=66, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                random_state=5951, reg_alpha=0.005,
+                                reg_lambda=10))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002756102F380>)
+2025-08-11 17:39:24,325:INFO:Checking exceptions
+2025-08-11 17:39:24,325:INFO:Preloading libraries
+2025-08-11 17:39:24,341:INFO:Set up data.
+2025-08-11 17:39:24,424:INFO:Set up index.
+2025-08-11 17:49:30,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:49:30,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:49:30,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:49:30,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-11 17:49:51,221:INFO:Initializing load_model()
+2025-08-11 17:49:51,221:INFO:load_model(model_name=model_final_pycaret, platform=None, authentication=None, verbose=True)
+2025-08-11 17:49:53,437:INFO:Initializing predict_model()
+2025-08-11 17:49:53,453:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C5D867A950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.5, bagging_freq=0,
+                                feature_fraction=0.6, learning_rate=0.15,
+                                min_child_samples=66, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                random_state=5951, reg_alpha=0.005,
+                                reg_lambda=10))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C5D88C54E0>)
+2025-08-11 17:49:53,453:INFO:Checking exceptions
+2025-08-11 17:49:53,453:INFO:Preloading libraries
+2025-08-11 17:49:53,453:INFO:Set up data.
+2025-08-11 17:49:53,511:INFO:Set up index.
+2025-08-11 18:02:56,787:INFO:Initializing load_model()
+2025-08-11 18:02:56,787:INFO:load_model(model_name=model_final_pycaret, platform=None, authentication=None, verbose=True)
+2025-08-11 18:02:57,052:INFO:Initializing predict_model()
+2025-08-11 18:02:57,052:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C5D2333B50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.5, bagging_freq=0,
+                                feature_fraction=0.6, learning_rate=0.15,
+                                min_child_samples=66, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                random_state=5951, reg_alpha=0.005,
+                                reg_lambda=10))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C5D23439C0>)
+2025-08-11 18:02:57,052:INFO:Checking exceptions
+2025-08-11 18:02:57,052:INFO:Preloading libraries
+2025-08-11 18:02:57,052:INFO:Set up data.
+2025-08-11 18:02:57,136:INFO:Set up index.
+2025-08-11 18:05:13,580:INFO:Initializing load_model()
+2025-08-11 18:05:13,580:INFO:load_model(model_name=model_final_pycaret, platform=None, authentication=None, verbose=True)
+2025-08-11 18:05:14,082:INFO:Initializing predict_model()
+2025-08-11 18:05:14,082:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C5E763CC10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.5, bagging_freq=0,
+                                feature_fraction=0.6, learning_rate=0.15,
+                                min_child_samples=66, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                random_state=5951, reg_alpha=0.005,
+                                reg_lambda=10))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C5D88A8540>)
+2025-08-11 18:05:14,082:INFO:Checking exceptions
+2025-08-11 18:05:14,082:INFO:Preloading libraries
+2025-08-11 18:05:14,082:INFO:Set up data.
+2025-08-11 18:05:14,175:INFO:Set up index.
+2025-08-11 18:08:03,062:INFO:Initializing load_model()
+2025-08-11 18:08:03,062:INFO:load_model(model_name=model_final_pycaret, platform=None, authentication=None, verbose=True)
+2025-08-11 18:08:03,217:INFO:Initializing predict_model()
+2025-08-11 18:08:03,218:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C5D22F8A50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.5, bagging_freq=0,
+                                feature_fraction=0.6, learning_rate=0.15,
+                                min_child_samples=66, min_split_gain=0,
+                                n_estimators=260, n_jobs=-1, num_leaves=6,
+                                random_state=5951, reg_alpha=0.005,
+                                reg_lambda=10))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C5D86F7D80>)
+2025-08-11 18:08:03,218:INFO:Checking exceptions
+2025-08-11 18:08:03,218:INFO:Preloading libraries
+2025-08-11 18:08:03,219:INFO:Set up data.
+2025-08-11 18:08:03,299:INFO:Set up index.
